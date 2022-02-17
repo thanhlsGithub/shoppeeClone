@@ -1,0 +1,126 @@
+
+/* MObile & Tablet */
+@media (max-width: 1023px) {
+    :root{
+        --navbar-height: 0px;
+        --header-height: 68px;
+    }
+
+    .hide-on-moble-table{
+        display: none ;
+    }
+    .header{
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        top: 0;
+    }
+    .header__sort-bar{
+        display: flex;
+    }
+    .app__container{
+        margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
+    }
+    .app__content{
+        padding-top: 4px;
+    }
+    .header__cart-list{
+        position:fixed;
+        top: var(--header-height);
+        right: 0px;
+        width: 100%;
+        padding: 0px calc((100% - 644px) / 2);
+
+    }
+    .mobile-category{
+        display: flex;
+    }
+    .header__cart-list::after{
+        display: none;
+    }
+    .footer__download{
+        display: flex;
+        justify-content: center;
+    }
+    .footer__download-app-img{
+        display: block;
+        margin: 8px 8px;
+    }
+    .footer__download-qr{
+        margin-top: 8px;
+    }
+    .footer-wrap{
+       text-align: center;
+       
+    }
+}
+
+/*Tablet */
+
+@media (min-width: 740px) and (max-width: 1024px){
+    
+    .hide-on-table{
+        display: none;
+        
+    }
+
+    .header__cart {
+        width: 80px;
+        text-align: right;
+    }
+}
+
+/* MObile */
+@media (max-width: 739px) {
+    :root{
+        --navbar-height: 0px;
+        --header-height: 54px;
+    }
+
+    .hide-on-moble{
+        display: none;
+        
+    }
+    .header-with-search{
+        justify-content: space-between;
+        padding: 0 24px;
+        position: relative;
+      
+    }
+
+    .header__cart,
+    .header__logo{
+        width: unset;
+    }
+    .header__logo-img{
+        width: 140px;
+    }
+    .header__mobile-search{
+        display: block;
+    }
+    .header__search-history{
+        position: fixed;
+        top: calc(var(--header-height) + var(--header-sort-bar-height));
+        left: 0;
+        right: 0;
+        box-shadow: -2px 2px 2px #ccc;
+    }
+    .app__content{
+        margin: 0 4px;
+    }
+    .product__pagination {
+        flex-wrap: wrap;
+        
+    }
+    .pagination-item__link{
+        min-width: 30px;
+        height: 25px;
+        line-height: 25px;
+        margin: 0;
+    }
+    .footer__coppyright{
+        padding: 0 24px;
+    }
+
+
+}
